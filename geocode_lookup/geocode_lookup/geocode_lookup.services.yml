@@ -1,5 +1,4 @@
 services:
-  geocode_lookup.default:
-    class: Drupal\geocode_lookup\Lookup
+  roblib_geocode_lookup.default:
+    class: Drupal\roblib_geocode_lookup\Lookup
     arguments: ["@http_client"]
-

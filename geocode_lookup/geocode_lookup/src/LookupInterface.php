@@ -8,6 +8,4 @@ namespace Drupal\geocode_lookup;
  * @package Drupal\geocode_lookup
  */
 interface LookupInterface {
-
-
 }

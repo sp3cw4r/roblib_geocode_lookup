@@ -1,13 +1,13 @@
 <?php
 
-namespace Drupal\geocode_lookup;
+namespace Drupal\roblib_geocode_lookup;
 
 use GuzzleHttp\Client;
 
 /**
  * Class Lookup.
  *
- * @package Drupal\geocode_lookup
+ * @package Drupal\roblib_geocode_lookup
  */
 class Lookup implements LookupInterface {
 

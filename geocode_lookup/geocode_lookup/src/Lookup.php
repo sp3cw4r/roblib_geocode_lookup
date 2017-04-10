@@ -11,7 +11,7 @@ use GuzzleHttp\Client;
  */
 class Lookup implements LookupInterface {
 
-  protected $googleApiKey = 'API-KEY-GOES-HERE';
+  protected $googleApiKey = 'AIzaSyAcbfo1gcw8kDR9jmylol73zyxzoY7qWwg';
   /**
    * GuzzleHttp\Client definition.
    *
@@ -43,14 +43,14 @@ class Lookup implements LookupInterface {
     $aa = $address_array[0];
 
     $string = (!empty($aa['address_line1'])) ? $aa['address_line1'] . ", " : '';
-    $string .= !empty($aa['address_line2']) ? $aa['address_line2'] . ", " : '';
+    //$string .= !empty($aa['address_line2']) ? $aa['address_line2'] . ", " : '';
     $string .= !empty($aa['dependent_locality']) ? $aa['dependent_locality'] . ", " : '';
     $string .= !empty($aa['locality']) ? $aa['locality'] . ", " : '';
     $string .= !empty($aa['postal_code']) ? $aa['postal_code'] . ", " : '';
     if (strlen($string)) {
       // User may not have set an address for this entity, keep it blank in
       // that case.
-      $string .= 'New Zealand';
+      $string .= 'Canada';
     }
     $string = str_replace(" ", "+", $string);
     $this->googleAddressString = $string;

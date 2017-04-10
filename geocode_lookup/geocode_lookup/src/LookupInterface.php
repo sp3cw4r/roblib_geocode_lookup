@@ -1,11 +1,11 @@
 <?php
 
-namespace Drupal\geocode_lookup;
+namespace Drupal\roblib_geocode_lookup;
 
 /**
  * Interface LookupInterface.
  *
- * @package Drupal\geocode_lookup
+ * @package Drupal\roblib_geocode_lookup
  */
 interface LookupInterface {
 }
